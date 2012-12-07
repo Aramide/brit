@@ -12,8 +12,7 @@
     <script src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript">
         $(document).bind("mobileinit", function () {
-            $.mobile.loadPage( checklists.html, { showLoadMsg: false } );        });
-            $.mobile.loadPage( notes.html, { showLoadMsg: false } );        });
+            
  $.mobile.getMaxScrollForTransition = none;
             $.defaultPageTransition = none;
             $.defaultDialogTransition = none;
@@ -48,7 +47,7 @@ function onButtonTap(e)
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
                         <li><a class="" data-theme="c" href="checklists.html" transition="none">CHECKLISTS</a></li>
-                        <li><a class="" data-theme="c" href="notes.html" data-ajax="false">THE PLAN</a></li>
+                        <li><a class="" data-theme="c" href="notes.html">THE PLAN</a></li>
                         <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
                     </ul>
                 </div>
