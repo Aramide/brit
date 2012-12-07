@@ -14,10 +14,8 @@
         $(document).bind("mobileinit", function () {
             
  $.mobile.getMaxScrollForTransition = none;
-            $.defaultPageTransition = none;
-            $.defaultDialogTransition = none;
-var isAbs = $.mobile.path.isAbsoluteUrl("http://www.app4brides.com/mall/index.php");
-           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.feminineedge.com/index.html");
+            $.mobile.defaultPageTransition = none;
+            $.mobile.defaultDialogTransition = none;
            $.mobile.silentScroll(200);
 $.mobile.allowCrossDomainPages = true;
 $.support.cors = true;
@@ -42,7 +40,7 @@ function onButtonTap(e)
         <div data-role="header">
             <div id="header">
                 
-                    <img src="images/Reception.jpg">
+                    <img src="images/Reception.jpg" width=100%>
             </div>
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
