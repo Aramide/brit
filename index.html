@@ -12,7 +12,7 @@
     <script src="js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript">
         $(document).bind("mobileinit", function () {
-          $.mobile.ajaxEnabled = false;
+          $.mobile.loadPage( index.html, { showLoadMsg: false } );        });
           $.mobile.getMaxScrollForTransition = none;
             $.defaultPageTransition = none;
             $.defaultDialogTransition = none;
@@ -46,7 +46,7 @@ function onButtonTap(e)
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
                         <li><a class="" data-theme="c" href="checklists.html">CHECKLISTS</a></li>
-                        <li><a class="" data-theme="c" href="notes.html">THE PLAN</a></li>
+                        
                         <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
                     </ul>
                 </div>
@@ -76,8 +76,7 @@ your phone, tablets or desktop. Also visit <a href="http://www.app4brides.com/ma
                 <ul data-role="listview">
                 <li><a href="index.html">ABOUT</a></li>
                     <li><a href="checklists.html">CHECKLISTS</a></li>
-                    <li><a href="notes.html">MY WEDDING PLANS</a></li>
-                    <li><a href="http://www.app4brides.com/mall/">APP4BRIDES MALL</a></li>
+                    
                 </ul>
         </div>
         <div data-role="footer">
