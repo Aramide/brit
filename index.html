@@ -10,13 +10,17 @@
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&amp;v1' rel='stylesheet' type='text/css'/>
     <link href="css/Site.min.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
         $(document).bind("mobileinit", function () {
-            
- $.mobile.getMaxScrollForTransition = none;
-            $.mobile.defaultPageTransition = none;
-            $.mobile.defaultDialogTransition = none;
-           
+          $.mobile.ajaxEnabled = false;
+            $.mobile.getMaxScrollForTransition = none;
+            $.defaultPageTransition = none;
+            $.defaultDialogTransition = none;
+            $.mobile.loadPage( index.html, { showLoadMsg: false } );        });
+            $.mobile.loadPage( checklists.html, { showLoadMsg: false } );        });
+           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.app4brides.com/mall/index.php");
+           var isAbs = $.mobile.path.isAbsoluteUrl("http://www.feminineedge.com/index.html");
+           $.mobile.silentScroll(200);
 $.mobile.allowCrossDomainPages = true;
 $.support.cors = true;
 $.mobile.buttonMarkup.hoverDelay = 0;
