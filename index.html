@@ -13,7 +13,9 @@
   <script type="text/javascript">
         $(document).bind("mobileinit", function () {
           $.mobile.ajaxEnabled = false;
-            
+          $.mobile.getMaxScrollForTransition = none;
+            $.defaultPageTransition = none;
+            $.defaultDialogTransition = none;       
   });
 
     </script>
@@ -30,8 +32,8 @@
             </div>
                 <div class="mvv-navbar mvv-edge-to-edge" data-role="navbar">
                     <ul>
-                        <li><a class="" data-theme="c" href="checklists.html" transition="none">CHECKLISTS</a></li>
-                        <li><a class="" data-theme="c" href="notes.html" transition="none">THE PLAN</a></li>
+                        <li><a class="" data-theme="c" href="checklists.html">CHECKLISTS</a></li>
+                        <li><a class="" data-theme="c" href="notes.html">THE PLAN</a></li>
                         <li><a class="ui-btn-active" data-theme="c" href="index.html">ABOUT</a></li>
                     </ul>
                 </div>
